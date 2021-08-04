@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivitycalculator">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:orientation="horizontal"
+        android:textSize="20sp"
+        tools:ignore="TextViewEdits">
+
+    </TextView>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right"
+        tools:ignore="RtlHardcoded">
+
+
+        <Button
+            android:id="@+id/ButtoDELE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/_DELE"
+            android:textSize="@dimen/button_text"
+            android:onClick="buttoDELE_onClick"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/ButtoYM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttoYM_onClick"
+            android:text="@string/_YM"
+            android:textSize="@dimen/button_text"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/ButtoRAV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttoRAV_onClick"
+            android:text="@string/_RAV"
+            android:textSize="@dimen/button_text" />
+        <Button
+            android:id="@+id/Plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttoPlus_onClick"
+            android:text="@string/_plus"
+            android:textSize="@dimen/button_text"/>
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttominus_onClick"
+            android:text="-"
+            android:textSize="@dimen/button_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Butto1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="butto1_onClick"
+            android:text="@string/counter_1"
+            android:textSize="@dimen/button_text"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/Butto2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="butto2_onClick"
+            android:text="@string/counter_2"
+            android:textSize="@dimen/button_text"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/Butto3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="butto3_onClick"
+            android:text="@string/counter_3"
+            android:textSize="@dimen/button_text"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/Butto4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="butto4_onClick"
+            android:text="@string/counter_4"
+            android:textSize="@dimen/button_text"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="UsingOnClickInXml" />
+        <Button
+            android:id="@+id/Butto5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="butto5_onClick"
+            android:text="@string/counter_5"
+            android:textSize="@dimen/button_text"
+            tools:ignore="UsingOnClickInXml"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/Butto6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="butto6_onClick"
+            android:text="@string/counter_6"
+            android:textSize="@dimen/button_text"
+            tools:ignore="UsingOnClickInXml"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Butto7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="butto7_onClick"
+            android:text="@string/counter_7"
+            android:textSize="@dimen/button_text"
+            tools:ignore="UsingOnClickInXml"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/Butto8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="butto8_onClick"
+            android:text="@string/counter_8"
+            android:textSize="@dimen/button_text"
+            tools:ignore="UsingOnClickInXml"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/Butto9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="butto9_onClick"
+            android:text="@string/counter_9"
+            android:textSize="@dimen/button_text"
+            tools:ignore="UsingOnClickInXml"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Butto0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:onClick="butto0_onClick"
+            android:text="@string/counter_0"
+            android:textSize="@dimen/button_text"
+            tools:ignore="UsingOnClickInXml"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/ButtoTOCHKA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttoTOCHKA_onClick"
+            android:text="@string/_TOCHKA"
+            android:textSize="@dimen/button_text"
+            tools:ignore="OnClick,UsingOnClickInXml"
+            style="?android:attr/buttonBarButtonStyle" />
+
+
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
+
+
+
+
+
+</LinearLayout>
